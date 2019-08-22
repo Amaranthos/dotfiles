@@ -5,4 +5,4 @@
 	editor = code -w
 [user]
 	name = Joshua Hodkinson
-	email = joshua.hodkinson@thoughtworks.com
+	email = $USER_EMAIL
