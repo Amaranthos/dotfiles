@@ -1,0 +1,8 @@
+
+[include]
+	path = ~/.gitconfig.aliases
+[core]
+	editor = code -w
+[user]
+	name = Joshua Hodkinson
+	email = joshua.hodkinson@thoughtworks.com

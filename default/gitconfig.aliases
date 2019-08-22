@@ -1,0 +1,15 @@
+[alias]
+	stats = shortlog -sn
+	words = diff --word-diff
+	changelog = log --format=\"%h [%an] %s\" --first-parent
+	undo = reset --hard
+	conflicts = !sh -c \"git diff --name-only | uniq | xargs subl -n\"
+	co = checkout
+	ss = status --short
+	patch = add -p
+	keep = commit -m
+	rmig = !git ls-files --ignored --exclude-standard | xargs git rm --cached
+	ec = config --global -e
+	wip = !git add -A && git commit -m 'WIP'
+	spush = push --recurse-submodules=on-demand
+	supdate = submodule update --remote --merge
