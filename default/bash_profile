@@ -1,3 +1,4 @@
+source ~/.bash.aliases
 source ~/.bash.prompt
 
 # config bash completetions
