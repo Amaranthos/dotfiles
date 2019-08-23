@@ -64,16 +64,17 @@ Caps Lock: No Action
 - Install settings sync`
 - Generate new git token
 
+<!-- Managed by dotfiles
 ## Configure git
 ```shell
-git config --global core.editor "code -w"
-git config --global user.name "Joshua Hodkinson"
-git config --global user.email $USER_EMAIL
-curl -o ~/.gitconfig.aliases -L https://gist.github.com/Amaranthos/690df1f6b75e6c0f5ce41609080e95d2/raw/.gitconfig.aliases
-git config --global include.path "~/.gitconfig.aliases"
+# git config --global core.editor "code -w"
+# git config --global user.name "Joshua Hodkinson"
+# git config --global user.email $USER_EMAIL
+# curl -o ~/.gitconfig.aliases -L https://gist.github.com/Amaranthos/690df1f6b75e6c0f5ce41609080e95d2/raw/.gitconfig.aliases
+# git config --global include.path "~/.gitconfig.aliases"
 # curl -o ~/.git-completion.bash -L https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 # echo -e '\ntest -f ~/.git-completion.bash && . $_' >> ~/.bash_profile && source ~/.bash_profile
-```
+``` -->
 
 ## Install font google fonts
 ```shell
