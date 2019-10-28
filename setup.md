@@ -27,6 +27,7 @@ brew cask install visual-studio-code
 brew cask install dotnet-sdk
 brew cask install spotify
 brew cask install docker
+brew cask install java
 ```
 
 ## Install app store apps
