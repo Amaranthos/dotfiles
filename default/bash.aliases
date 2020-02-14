@@ -5,3 +5,7 @@ alias serve='npx http-server .'
 alias push='git pull -r && git push'
 
 alias nanoreact='npx nano-react-app'
+
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -al'
