@@ -1,3 +1,5 @@
 *.rendered
+*.DS_Store
 
 .vscode/
+clients_*/

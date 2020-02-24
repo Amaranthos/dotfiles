@@ -1,10 +1,8 @@
 alias chrome='open -a "/Applications/Google Chrome.app"'
 
-alias serve='npx http-server .'
+alias sourcebp='source ~/.bash_profile'
 
 alias push='git pull -r && git push'
-
-alias nanoreact='npx nano-react-app'
 
 alias ll='ls -l'
 alias la='ls -a'
