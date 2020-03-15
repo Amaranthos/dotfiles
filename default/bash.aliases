@@ -1,9 +1,8 @@
 alias chrome='open -a "/Applications/Google Chrome.app"'
 
 alias sourcebp='source ~/.bash_profile'
-
-alias push='git pull -r && git push'
-
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
+alias push='git pull -r && git push'
+alias home='cd ~'
