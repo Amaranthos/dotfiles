@@ -2,5 +2,5 @@ export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 test -f /usr/local/etc/profile.d/bash_completion.sh && source $_
 
 export NVM_DIR="$HOME/.nvm"
-test -s /usr/local/opt/nvm/nvm.sh && source $_
+test -s "$NVM_DIR/nvm.sh" && source $_
 test -s /usr/local/opt/nvm/etc/bash_completion.d/nvm && source $_

@@ -13,3 +13,5 @@
 	spush = push --recurse-submodules=on-demand
 	supdate = submodule update --remote --merge
 	oneline = log --oneline
+	next = !git checkout $(git rev-list --topo-order HEAD..master | tail -1)
+	prev = checkout HEAD^

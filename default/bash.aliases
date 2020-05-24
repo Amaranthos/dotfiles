@@ -6,3 +6,4 @@ alias la='ls -a'
 alias lla='ls -al'
 alias push='git pull -r && git push'
 alias home='cd ~'
+alias path="echo \"${PATH//:/$'\n'}\""
