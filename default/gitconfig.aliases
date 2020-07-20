@@ -15,3 +15,5 @@
 	oneline = log --oneline
 	next = !git checkout $(git rev-list --topo-order HEAD..master | tail -1)
 	prev = checkout HEAD^
+	untrackf = update-index --assume-unchanged
+	trackf = update-index --no-assume-unchanged

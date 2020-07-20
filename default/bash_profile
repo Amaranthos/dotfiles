@@ -1,6 +1,7 @@
-for f in ~/.*.env; do source $f; done
+test -f ~/.*.env && source $_
 
 source ~/.bash.aliases
 source ~/.bash.completions
 source ~/.bash.functions
 source ~/.bash.prompt
+source ~/.bash.openvpn
