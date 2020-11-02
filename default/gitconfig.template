@@ -6,3 +6,5 @@
 [user]
 	name = Joshua Hodkinson
 	email = $USER_EMAIL
+[pull]
+	ff = only
