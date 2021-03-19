@@ -1,8 +1,7 @@
 alias chrome='open -a "/Applications/Google Chrome.app"'
 
-alias code=code-insiders
-
 alias sourcebp='source ~/.bash_profile'
+alias reload='source ~/.bash_profile'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
