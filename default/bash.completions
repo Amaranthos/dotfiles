@@ -1,6 +1,5 @@
-export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
-test -f /usr/local/etc/profile.d/bash_completion.sh && source $_
-
 export NVM_DIR="$HOME/.nvm"
-test -s "$(brew --prefix)/opt/nvm/nvm.sh" && source $_
-test -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" && source $_
+test -s "$NVM_DIR/nvm.sh" && source $_
+test -s "$NVM_DIR/bash_completion" && source $_
+
+export PATH="/usr/local/sbin:$PATH"

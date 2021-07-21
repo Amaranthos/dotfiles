@@ -1,8 +1,10 @@
+#!/usr/bin/env bash
+
 test -f ~/.*.env && source $_
 
+source ~/.bash.brew
 source ~/.bash.completions
 source ~/.bash.functions
 source ~/.bash.prompt
-source ~/.bash.openvpn
 source ~/.bash.androidstudio
 source ~/.bash.aliases

@@ -5,36 +5,7 @@
 ```shell
 xcode-select —-install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-## Tap brew repos
-
-```shell
-brew tap bashdot/tap
-```
-
-## Install tools via brew
-
-```shell
-brew install nvm
-brew install bash
-brew install bashdot
-brew install jenv
-brew install jq
-brew install pyenv
-```
-
-## Install apps via brew
-
-```shell
-brew cask install rectangle
-brew cask install google-chrome
-brew cask install slack
-brew cask install visual-studio-code
-brew cask install dotnet-sdk
-brew cask install spotify
-brew cask install docker
-brew cask install java # and other java versions
+brew bundle install
 ```
 
 ## Configure terminal
