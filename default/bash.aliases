@@ -5,12 +5,12 @@ alias reload='source ~/.bash_profile'
 
 alias ll='ls -l'
 alias la='ls -a'
-alias lla='ls -al'
+alias lla='ls -la'
 
 alias push='git pull -r && git push'
 
 alias path="echo \"${PATH//:/$'\n'}\""
 
-type git-together >/dev/null 2>&1 && alias gt=git-together
-
 alias yws='yarn workspace'
+
+alias rmnode="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"

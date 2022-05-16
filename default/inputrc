@@ -15,3 +15,6 @@ set skip-completed-text on
 
 set colored-stats on
 set completion-prefix-display-length 3
+
+# Prevent newlines in copied blocks from executing
+set enable-bracketed-paste on

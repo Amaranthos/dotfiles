@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-
-test -f ~/.*.env && source $_
+for f in ~/.*.env; do
+    source $f
+done
 
 source ~/.bash.brew
 source ~/.bash.completions
@@ -8,3 +8,5 @@ source ~/.bash.functions
 source ~/.bash.prompt
 source ~/.bash.androidstudio
 source ~/.bash.aliases
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
