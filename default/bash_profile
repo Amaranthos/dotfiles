@@ -1,4 +1,5 @@
 echo "Loading bash_profile..."
+start=$(perl -mTime::HiRes -e 'printf "%.0f\n", (Time::HiRes::time() * 1000)')
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -15,4 +16,5 @@ source ~/.bash.androidstudio
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-echo "Loaded"
+end=$(perl -mTime::HiRes -e 'printf "%.0f\n", (Time::HiRes::time() * 1000)')
+echo "Loaded in $(($end - $start))ms"
