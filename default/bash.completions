@@ -1,5 +1,0 @@
-export NVM_DIR="$HOME/.nvm"
-test -s "$NVM_DIR/nvm.sh" && source $_
-test -s "$NVM_DIR/bash_completion" && source $_
-
-export PATH="/usr/local/sbin:$PATH"

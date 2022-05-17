@@ -3,3 +3,5 @@
 
 .vscode/
 client/
+
+Brewfile.lock.json

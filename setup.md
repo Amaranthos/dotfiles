@@ -8,12 +8,12 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew bundle install
 ```
 
-## Configure terminal
+## Configure bash
 
-### Profiles > Text
+https://itnext.io/upgrading-bash-on-macos-7138bd1066ba
 
-- Font > Inconsolata
-- Cursor > Vertical Bar
+- white list bash@5 `sudo nano /etc/shells/`
+- set default shell `chsh -s <path>`
 
 ## Change system preferences
 
@@ -33,9 +33,3 @@ Caps Lock: No Action
 ## iTunes
 
 Preferences > Devices > Prevent from syncing automatically
-
-## Configure bash
-
-https://itnext.io/upgrading-bash-on-macos-7138bd1066ba
-
-- white list bash@5

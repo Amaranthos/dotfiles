@@ -1,12 +1,18 @@
+echo "Loading bash_profile..."
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 for f in ~/.*.env; do
     source $f
 done
 
 source ~/.bash.brew
-source ~/.bash.completions
+source ~/.bash.aliases
 source ~/.bash.functions
 source ~/.bash.prompt
+source ~/.bash.nvm
 source ~/.bash.androidstudio
-source ~/.bash.aliases
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+echo "Loaded"

@@ -2,3 +2,5 @@ export HOMEBREW_BUNDLE_FILE="${HOME}/.brewfile"
 
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 test -f "$(brew --prefix)/etc/profile.d/bash_completion.sh" && source $_
+
+export HOMEBREW_NO_ANALYTICS=1
