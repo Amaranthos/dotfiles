@@ -2,6 +2,8 @@ echo "Loading bash_profile..."
 start=$(perl -mTime::HiRes -e 'printf "%.0f\n", (Time::HiRes::time() * 1000)')
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export CPATH="$(brew --prefix)/include"
+export LIBRARY_PATH="$(brew --prefix)/lib"
 
 for f in ~/.*.env; do
     source $f
@@ -13,6 +15,8 @@ source ~/.bash.functions
 source ~/.bash.prompt
 source ~/.bash.nvm
 source ~/.bash.androidstudio
+
+source <(op completion bash)
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 

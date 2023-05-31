@@ -49,12 +49,14 @@ defaults write -g NSToolbarTitleViewRolloverDelay -float 0
 ## Keyboard
 
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
-defaults write -g KeyRepeat -int 0.5
-defaults write -g InitialKeyRepeat -float 10
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 12
 
 defaults write -g AppleShowScrollBars -string "always"
 
 defaults write -g com.apple.swipescrolldirection -bool false
+defaults write -g com.apple.mouse.scaling -1
 
 killall Finder
 killall Dock

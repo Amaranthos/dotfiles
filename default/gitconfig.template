@@ -8,3 +8,7 @@
 	email = $USER_EMAIL
 [pull]
 	ff = only
+[merge]
+	tool = code
+[mergetool "code"]
+	cmd = code -w -m $REMOTE $LOCAL $BASE $MERGED
