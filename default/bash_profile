@@ -15,6 +15,7 @@ source ~/.bash.functions
 source ~/.bash.prompt
 source ~/.bash.nvm
 source ~/.bash.androidstudio
+source ~/.bash.ssh
 
 source <(op completion bash)
 

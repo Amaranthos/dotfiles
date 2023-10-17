@@ -3,12 +3,13 @@
 	words = diff --word-diff
 	changelog = log --format=\"%h [%an] %s\" --first-parent
 	undo = reset --hard
+	retry = reset HEAD~1
 	co = checkout
 	ss = status --short
 	patch = add -p
 	keep = commit -m
 	amend = commit --amend --no-edit
-	rmignored = !git ls-files --ignored --exclude-standard | xargs git rm --cached
+	rmignored = !git ls-files -ic --exclude-standard | xargs git rm --cached
 	ec = config --global -e
 	wip = !git add -A && git commit -m 'WIP'
 	spush = push --recurse-submodules=on-demand
@@ -18,3 +19,4 @@
 	prev = checkout HEAD^
 	untrackf = update-index --assume-unchanged
 	trackf = update-index --no-assume-unchanged
+	fpush = push --force-with-lease --force-if-includes
