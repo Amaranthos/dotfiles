@@ -5,3 +5,6 @@
 client/
 
 Brewfile.lock.json
+
+config/
+!config/helix/
