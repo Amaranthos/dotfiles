@@ -8,3 +8,4 @@ Brewfile.lock.json
 
 config/
 !config/helix/
+!config/alacritty/

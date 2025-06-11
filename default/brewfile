@@ -27,6 +27,7 @@ brew "openvpn"
 brew "yarn"
 brew "yarn-completion"
 brew "bashdot/tap/bashdot"
+brew "util-linux"
 
 cask "1password"
 cask "alex313031-thorium"

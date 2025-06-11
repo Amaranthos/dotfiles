@@ -1,11 +1,15 @@
-theme = "ayu_evolve"
+theme = "ayu_dark"
 
 [editor]
 bufferline = "always"
+auto-format = true
+mouse = false
+
+[editor.soft-wrap]
+enable = true
 
 [editor.cursor-shape]
 insert = "bar"
-normal = "block"
 select = "underline"
 
 [editor.file-picker]
@@ -14,7 +18,7 @@ hidden = false
 [editor.statusline]
 left = ["mode", "spinner"]
 center = ["file-name"]
-right = ["version-control", "diagnostics", "selections", "file-encoding", "file-line-ending", "file-type"]
+right = ["version-control", "diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "|"
 
 [editor.indent-guides]
@@ -26,5 +30,8 @@ skip-levels = 1
 display-inlay-hints = true
 
 [keys.insert]
-j = { j = "normal_mode" }
 C-s = ["normal_mode", ":w"]
+
+[keys.normal."backspace"]
+g = ":sh zellij run -f -- lazygit"
+e = ":sh zellij run -f -- env"

@@ -11,6 +11,7 @@
 	amend = commit --amend --no-edit
 	rmignored = !git ls-files -ic --exclude-standard | xargs git rm --cached
 	ec = config --global -e
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	wip = !git add -A && git commit -m 'WIP'
 	spush = push --recurse-submodules=on-demand
 	supdate = submodule update --remote --merge

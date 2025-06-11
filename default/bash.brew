@@ -4,3 +4,4 @@ export HOMEBREW_NO_ANALYTICS=1
 export BASH_COMPLETION_COMPAT_DIR="$(brew --prefix)/etc/bash_completion.d"
 test -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" && source $_
 
+export PATH="$(brew --prefix)/opt/util-linux/sbin:$(brew --prefix)/opt/util-linux/bin:$PATH"
