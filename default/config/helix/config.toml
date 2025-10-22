@@ -1,3 +1,4 @@
+
 theme = "ayu_dark"
 
 [editor]
@@ -20,18 +21,50 @@ left = ["mode", "spinner"]
 center = ["file-name"]
 right = ["version-control", "diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "|"
+# :echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}
 
 [editor.indent-guides]
 render = true
 character = "╎"
 skip-levels = 1
 
-[editor.lsp]
-display-inlay-hints = true
+[keys.normal]
+x = "extend_line"
+V = ["goto_first_nonwhitespace", "extend_to_line_end"]
+
+A-w = "move_next_sub_word_start"
+A-b = "move_prev_sub_word_start"
+A-e = "move_next_sub_word_end"
+
+A-B = 'move_parent_node_start'
+A-E = 'move_parent_node_end'
+
+C-s = [":w"]
+C-g = [":n", ":insert-output lazygit", ":bc!", ":redraw"]
+C-t = [":n", ":insert-output make test"]
+
+g = { d = ["goto_definition", "rotate_view"]}
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
+# E = [
+#   ':sh rm -f /tmp/unique-file',
+#   ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
+#   ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+#   ':open %sh{cat /tmp/unique-file}',
+#   ':redraw'
+# ]
+
+[keys.normal.m]
+e = "@mi{<A-;>vl" # TODO: Review this one to make it more useful
+
+[keys.select]
+x = "extend_line"
+";" = ["collapse_selection", "normal_mode"]
+
+A-w = "extend_next_sub_word_start"
+A-b = "extend_prev_sub_word_start"
+A-e = "extend_next_sub_word_end"
 
 [keys.insert]
 C-s = ["normal_mode", ":w"]
-
-[keys.normal."backspace"]
-g = ":sh zellij run -f -- lazygit"
-e = ":sh zellij run -f -- env"
